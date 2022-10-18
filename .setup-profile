@@ -1,0 +1,13 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# to fix some c library compilation errors: https://apple.stackexchange.com/questions/414622/installing-a-c-c-library-with-homebrew-on-m1-macs
+export CPATH=/opt/homebrew/include
+export LIBRARY_PATH=/opt/homebrew/lib
+
+export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl/lib/pkgconfig"
+
+. $HOME/.asdf/asdf.sh
+
+eval "$(direnv hook zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"

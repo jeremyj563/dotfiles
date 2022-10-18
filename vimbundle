@@ -1,0 +1,36 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'sainnhe/sonokai'
+Plug 'vim-airline/vim-airline'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'duff/vim-bufonly'
+Plug 'ervandew/supertab'
+Plug 'godlygeek/tabular'
+Plug 'hashrocket/vim-hashrocket'
+Plug 'jgdavey/tslime.vim' " might not need this
+Plug 'jgdavey/vim-turbux'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+Plug 'vim-scripts/bufexplorer.zip'
+Plug 'vim-scripts/bufkill.vim'
+
+for f in split(glob('~/.vimbundles/*'), '\n')
+  exe 'source' f
+endfor
+
+if filereadable(expand('~/.vimbundle.local'))
+  exe 'source' '~/.vimbundle.local'
+endif
+
+call plug#end()

@@ -2,6 +2,7 @@
 # Zsh
 [ -f $HOME/.zshrc ] && mv $HOME/.zshrc $HOME/.zshrc.backup
 cp .zshrc $HOME/.zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 cp aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 cp config.zsh $HOME/.oh-my-zsh/custom/config.zsh
 cp env.zsh $HOME/.oh-my-zsh/custom/env.zsh

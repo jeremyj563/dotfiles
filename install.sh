@@ -1,18 +1,21 @@
 #!/bin/bash
 
-# Zsh - Installation
-[ -f $HOME/.zshrc ] && mv $HOME/.zshrc $HOME/.zshrc.backup
-cp $HOME/.dotfiles/.zshrc $HOME/
-
-# Oh My Zsh - Installation + Themes
+# Oh My Zsh - Installation
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp $HOME/.dotfiles/.p10k.zsh $HOME/
 
 # Oh My Zsh - Configuration
 cp $HOME/.dotfiles/aliases.zsh $HOME/.oh-my-zsh/custom/
 cp $HOME/.dotfiles/env.zsh $HOME/.oh-my-zsh/custom/
 cp $HOME/.dotfiles/window.zsh $HOME/.oh-my-zsh/custom/
+
+# Zsh - Configuration
+[ -f $HOME/.zshrc ] && mv $HOME/.zshrc $HOME/.zshrc.backup
+cp $HOME/.dotfiles/.zshrc $HOME/
+
+# Powerlevel10k - Configuration
+[ -f $HOME/.p10k.zsh ] && mv $HOME/.p10k.zsh $HOME/.p10k.zsh.backup
+cp $HOME/.dotfiles/.p10k.zsh $HOME/
 
 # git - Configuration
 [ -f $HOME/.gitconfig ] && mv $HOME/.gitconfig $HOME/.gitconfig.backup

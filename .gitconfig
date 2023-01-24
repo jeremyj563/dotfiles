@@ -1,8 +1,10 @@
 [user]
-	email = jason@geometer.io
-	name = Jason Carter
+email = modernclassicgamer@gmail.com
+name = Jeremy Johnson
+
 [core]
-	editor = vim
+editor = vim
+
 [alias]
  s = status
  co = checkout
@@ -14,5 +16,3 @@
  res = !git reset --hard
  done = !git push origin HEAD
  lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
-[include]
-	path = ~/.gitconfig-geometer

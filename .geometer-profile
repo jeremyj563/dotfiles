@@ -1,2 +1,0 @@
-export PROJECT_FOLDER=$HOME/workspace
-source $PROJECT_FOLDER/dotfiles/dotfiles/zshrc.include

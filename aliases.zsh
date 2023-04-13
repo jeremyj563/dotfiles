@@ -14,3 +14,4 @@ alias psw='source $HOME/source/repos.personal/jeremyj563/proxy-switcher/proxy-sw
 alias proxy_on='psw $PROXY'
 alias proxy_off='psw'
 alias ports='netstat -tulanp'
+alias upgrade='sudo apt update && sudo apt -y full-upgrade'

@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias la='ls -A'
 alias grep='grep --color=auto'
-alias pubkey="more ~/.ssh/id_rsa.pub | xclip | echo '=> Public key copied to pasteboard.'"
+alias pubkey="more ~/.ssh/id_ed25519.pub | xclip | echo '=> Public key copied to pasteboard.'"
 alias c='clear'
 alias statc='stat -c %a'
 alias psw='source $HOME/source/repos.personal/jeremyj563/proxy-switcher/proxy-switcher.sh'
